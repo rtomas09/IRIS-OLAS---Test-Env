@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manage bank account","Search a bank account","SUCCESS","2024-01-26T17:30:15.263+08:00[Asia/Manila]","0.0","34.92"
+"Manage bank account","Activate a bank account","SUCCESS","2024-01-26T17:30:50.9+08:00[Asia/Manila]","0.0","40.66"
+"Review AP entries","Search payment","SUCCESS","2024-01-26T17:59:56.1+08:00[Asia/Manila]","0.0","37.68"
+"Review AP entries","Payment information","SUCCESS","2024-01-26T18:05:30.944+08:00[Asia/Manila]","0.0","76.3"
+"Supplier creation","Supplier and supplier master creation","SUCCESS","2024-01-26T18:14:08.188+08:00[Asia/Manila]","0.0","108.27"

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Redistribution","Pre logging GL distribution current year","ERROR","2024-01-26T17:49:16.175+08:00[Asia/Manila]","0.0","42.45"
+"Redistribution","Pre logging GL distribution prior year","ERROR","2024-01-26T17:49:59.345+08:00[Asia/Manila]","0.0","43.68"
+"Redistribution","Voucher match with tolerance","FAILURE","2024-01-26T17:50:43.72+08:00[Asia/Manila]","0.0","69.07"

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manage bank account","Add a bank account","ERROR","2024-01-26T17:28:13.304+08:00[Asia/Manila]","0.0","73.72"
+"Manage bank account","Edit a bank account","FAILURE","2024-01-26T17:29:27.886+08:00[Asia/Manila]","0.0","46.62"
+"Manage bank account","Manage bank account using GVAGL bank account","FAILURE","2024-01-26T17:31:32.263+08:00[Asia/Manila]","0.0","34.7"

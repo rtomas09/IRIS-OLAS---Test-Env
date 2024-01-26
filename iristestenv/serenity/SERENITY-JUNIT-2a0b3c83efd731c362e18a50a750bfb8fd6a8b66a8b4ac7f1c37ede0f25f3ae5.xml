@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="5" name="org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation" skipped="0" tests="6" time="328.39" timestamp="2024-01-26 06:10:24"><testcase classname="org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation" name="View a supplier"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+steps.IRIS.FAD.SupplierCreationSteps.then_a_search_result_should_show_up_containing_supplier(SupplierCreationSteps.java:150)&#13;
+org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation.viewASupplier(SupplierCreation.java:219)&#13;
+</system-err></testcase><testcase classname="org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation" name="Edit a supplier"><failure message="expected:&lt;[Supplier Address Book Creation]&gt; but was:&lt;[TEST SUPPLIER]&gt;" type="org.junit.ComparisonFailure">expected:&lt;[Supplier Address Book Creation]&gt; but was:&lt;[TEST SUPPLIER]&gt;</failure><system-err>expected:&lt;[Supplier Address Book Creation]&gt; but was:&lt;[TEST SUPPLIER]&gt;&#13;
+steps.IRIS.FAD.SupplierCreationSteps.then_the_Supplier_Address_Book_Creation_form_should_show_up(SupplierCreationSteps.java:33)&#13;
+org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation.editASupplier(SupplierCreation.java:412)&#13;
+</system-err></testcase><testcase classname="org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation" name="Payment terms update"><failure message="expected:&lt;[Supplier Address Book Creation]&gt; but was:&lt;[MERALCO]&gt;" type="org.junit.ComparisonFailure">expected:&lt;[Supplier Address Book Creation]&gt; but was:&lt;[MERALCO]&gt;</failure><system-err>expected:&lt;[Supplier Address Book Creation]&gt; but was:&lt;[MERALCO]&gt;&#13;
+steps.IRIS.FAD.SupplierCreationSteps.then_the_Supplier_Address_Book_Creation_form_should_show_up(SupplierCreationSteps.java:33)&#13;
+org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation.paymentTermsUpdate(SupplierCreation.java:82)&#13;
+</system-err></testcase><testcase classname="org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation" name="Search a supplier"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+steps.IRIS.FAD.SupplierCreationSteps.then_a_search_result_should_show_up_containing_supplier(SupplierCreationSteps.java:150)&#13;
+org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation.searchASupplier(SupplierCreation.java:476)&#13;
+</system-err></testcase><testcase classname="org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation" name="Validate or deactivate a supplier"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+steps.IRIS.FAD.SupplierCreationSteps.then_a_search_result_should_show_up_containing_supplier(SupplierCreationSteps.java:150)&#13;
+org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation.validateOrDeactivateASupplier(SupplierCreation.java:278)&#13;
+</system-err></testcase><testcase classname="org.icrc.fadapplic.IRIS.FAD.AccountsPayable.SupplierCreation" name="Supplier and supplier master creation"/></testsuite>

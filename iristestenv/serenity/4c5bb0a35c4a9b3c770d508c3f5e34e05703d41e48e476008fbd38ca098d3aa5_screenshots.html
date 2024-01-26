@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a4a6c224b2577fdc04b7d26c4d18e9f980394bd16d9e187a002c390dbf3abfb6.html">Manage Bank Account</a></span>
+                > <span class="truncate-60"><a
+                    href="4c5bb0a35c4a9b3c770d508c3f5e34e05703d41e48e476008fbd38ca098d3aa5.html">Add a bank account </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-01-2024 17:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Manage Bank Account </span>
+                                    <span class="badge tag-badge" style="">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Add a bank account
+                                    <span class="related-issue-title">(MB03)</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'/html/body/div[1]/div/div[3]/div/div/div[2]/div[1]/div[2]/div[2]/div/div[6]/div/button/div/div/span | /html/body/div[1]/div/div[3]/div[2]/div/div/div[2]/div/div[1]/div[2]/div[2]/div/div[2]/div/button/div/div/span'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>pageobjects.IRIS.FAD.GenericPage.scrollIntoView(GenericPage.java:315)<br />pageobjects.IRIS.FAD.GenericPage.clickElement(GenericPage.java:197)<br />pageobjects.IRIS.FAD.FADGenericPage.clickOnAccordionContinueBtn(FADGenericPage.java:426)<br />steps.IRIS.FAD.ManageBankAccountSteps.when_I_click_accordion_Continue_button(ManageBankAccountSteps.java:114)<br />org.icrc.fadapplic.IRIS.FAD.AccountsPayable.ManageBankAccount.addABankAccount(ManageBankAccount.java:395)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6646277787938185929.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="aca5d011935ccb866f6c6bcf9d3403abc21ea06de2d4eaeabc4cae7aaac3a068.png" title=" Given that im logged into manage bank account page" width="1920"/>
+                <img src="aca5d011935ccb866f6c6bcf9d3403abc21ea06de2d4eaeabc4cae7aaac3a068.png" title=" When i open FAD URL" width="1920"/>
+                <img src="aca5d011935ccb866f6c6bcf9d3403abc21ea06de2d4eaeabc4cae7aaac3a068.png" title=" When i open page from sidebar menu: {Supplier Management,Manage Bank Account}" width="1920"/>
+                <img src="e4c6bbc842971d603b1d6a5ce5965ff1e90750258039f8a3014af91349bc2ab6.png" title=" When i open page from sidebar menu: {Supplier Management,Manage Bank Account}" width="1920"/>
+                <img src="a561ef6e5ef111abfc81fd35fa5e86c08ce4a3658fc3c9313fcf437a59c1691d.png" title=" When i open page from sidebar menu: {Supplier Management,Manage Bank Account}" width="1920"/>
+                <img src="a18bd1ed743bb70187dd15f3df1d011967112b2cbd0e4f030fc023b7b34ff326.png" title=" When i open page from sidebar menu: {Supplier Management,Manage Bank Account} (completed)" width="1920"/>
+                <img src="a18bd1ed743bb70187dd15f3df1d011967112b2cbd0e4f030fc023b7b34ff326.png" title=" Given that im logged into manage bank account page (completed)" width="1920"/>
+                <img src="a18bd1ed743bb70187dd15f3df1d011967112b2cbd0e4f030fc023b7b34ff326.png" title=" Then the manage bank account page and its contents should show up" width="1920"/>
+                <img src="ed23ba5467fb4d1bb392c39f6ec090ea16baea63fe632f38937fd5ff9d249e8b.png" title=" When I set the 'Supplier' to '54556'" width="1920"/>
+                <img src="ede73024f9760ab8212e4453ead5a210dc41b790fb34e61ac5afff6d5b7551c5.png" title=" When I set the 'Supplier' to '54556' (completed)" width="1920"/>
+                <img src="788dcba60e561fdade213c44a8dda20d9e093e290533662f6aef1ab769533786.png" title=" When i click search button" width="1920"/>
+                <img src="dc7f07566342fcdc9cf9322f4d16bc6cb44d1a05a705e54156e1f58eb9c6d92f.png" title=" When i click search button (completed)" width="1920"/>
+                <img src="659039a67d941dcd4afe0d38a4ec2725321f9cd9fa5d3f42a8e0b96259c1845a.png" title=" When I add the bank account 'SWIFT Account'" width="1920"/>
+                <img src="0637c7147cae13d22353f1e0867c1f8cab44ef45c4d15a556c77647bcb726fce.png" title=" When I add the bank account 'SWIFT Account'" width="1920"/>
+                <img src="0637c7147cae13d22353f1e0867c1f8cab44ef45c4d15a556c77647bcb726fce.png" title=" When I add the bank account 'SWIFT Account' (completed)" width="1920"/>
+                <img src="a87039aead9362be7e4545704de4eca36f092ed77391f1366a3847738241b2ec.png" title=" Then the add bank account form should show up" width="1920"/>
+                <img src="a87039aead9362be7e4545704de4eca36f092ed77391f1366a3847738241b2ec.png" title=" Then the internal information accordion form should be opened" width="1920"/>
+                <img src="1b0b588a88c8f8fade17367a1171109edffe186ba2e9b92ed8cc0ec4c4f09747.png" title=" When I set the 'GL Banck Account' to '1MAN400.40USD0'" width="1920"/>
+                <img src="893965b51d82aaa2bdde81d1e51a065b367fe17090e29ed8e919b6859aacff55.png" title=" When I set the 'GL Banck Account' to '1MAN400.40USD0' (completed)" width="1920"/>
+                <img src="45bb8b4b7cace26a415766ad57ab0dd3885cc898c5ff62dff02ea14b6e14e84c.png" title=" When i click accordion continue button: <span class='error-color'>ERROR</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.6</span>
+</div>
+</body>
+</html>
