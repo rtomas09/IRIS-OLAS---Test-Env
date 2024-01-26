@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Unbilled PO receipts","Close unbilled PO receipt","ERROR","2024-01-26T11:30:54.29+08:00[Asia/Manila]","0.0","134.65"
+"Unbilled PO receipts","Matching receipt","ERROR","2024-01-26T11:33:09.688+08:00[Asia/Manila]","0.0","134.11"
+"Unbilled PO receipts","Unbilled PO matching receipts","ERROR","2024-01-26T11:35:24.547+08:00[Asia/Manila]","0.0","134.64"
+"Unbilled PO receipts","Matching receipt with DA","ERROR","2024-01-26T11:37:39.94+08:00[Asia/Manila]","0.0","132.59"
+"Unbilled PO receipts","Matching receipt validate","ERROR","2024-01-26T11:39:53.333+08:00[Asia/Manila]","0.0","139.17"
+"Unbilled PO receipts","Unbilled POCUPR simple","ERROR","2024-01-26T11:42:13.316+08:00[Asia/Manila]","0.0","137.54"

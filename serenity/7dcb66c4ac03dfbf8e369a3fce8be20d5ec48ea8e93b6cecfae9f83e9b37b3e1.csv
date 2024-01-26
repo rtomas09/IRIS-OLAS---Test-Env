@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Payments","Manual payment partial","ERROR","2024-01-26T10:05:37.422+08:00[Asia/Manila]","0.0","130.39"
+"Payments","Manual payment with multiple documents","ERROR","2024-01-26T10:07:48.533+08:00[Asia/Manila]","0.0","140.3"
+"Payments","Application of prepayment full","ERROR","2024-01-26T10:10:09.561+08:00[Asia/Manila]","0.0","133.16"
+"Payments","Manual payment with negative amount","ERROR","2024-01-26T10:12:23.454+08:00[Asia/Manila]","0.0","135.43"
+"Payments","Manual payment with zero payments","ERROR","2024-01-26T10:14:39.624+08:00[Asia/Manila]","0.0","136.68"
+"Payments","Manual payment full","ERROR","2024-01-26T10:16:57.037+08:00[Asia/Manila]","0.0","135.53"
+"Payments","Application of prepayment partial","ERROR","2024-01-26T10:19:13.28+08:00[Asia/Manila]","0.0","136.82"

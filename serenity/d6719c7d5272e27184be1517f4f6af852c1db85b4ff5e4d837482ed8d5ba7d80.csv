@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manage bank account","Add a bank account","ERROR","2024-01-26T09:54:36.176+08:00[Asia/Manila]","0.0","131.47"
+"Manage bank account","Edit a bank account","ERROR","2024-01-26T09:56:48.374+08:00[Asia/Manila]","0.0","129.98"
+"Manage bank account","Search a bank account","ERROR","2024-01-26T09:58:59.07+08:00[Asia/Manila]","0.0","129.12"
+"Manage bank account","Activate a bank account","ERROR","2024-01-26T10:01:08.915+08:00[Asia/Manila]","0.0","131.26"
+"Manage bank account","Manage bank account using GVAGL bank account","ERROR","2024-01-26T10:03:20.911+08:00[Asia/Manila]","0.0","135.08"
